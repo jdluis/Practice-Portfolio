@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+
+    --borderColor:1px solid #c1c1c1;
+
+    --mainText-color: #000;
+    --secondaryText-color: #4b5156;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--mainText-color);
+}
+p,li,span,label,input,textarea {
+    color: var(--mainText-color);
+}
+
+.s1 {
+    background: var(--mainColor);
+    border-bottom: var(--borderColor);
+    overflow: auto;
+}
+
+.s2 {
+    background: var(--secondaryColor);
+    border-bottom: var(--borderColor);
+    overflow: auto;
+}
+
+.mainContainer {
+    width: 1200px;
+    height: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainContainer {
+        width: 95%;
+    }
+    
+}
