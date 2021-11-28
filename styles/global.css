@@ -31,7 +31,6 @@
     --secondaryText-color: #4b5156;
 }
 
-body {background: var(--mainColor); width: 100%;}
 
 h1,h2,h3,h4,h5,h6, strong {
     color: var(--mainText-color);
@@ -50,6 +49,10 @@ p,li,span,label,input,textarea {
     font-family: var(--three-text-font);
     font-size: 16px;
     margin: 16px 0;
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -264,37 +267,78 @@ flex-direction: row;
 /* finish SECTION 1 title*/
 
 /*---Section 2-- START---------------------*/
-#wrapper-s2 {
 
+.s2 {
+    background-color: #fff!important;
+    width: 100%;
+}
+#about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20em 20em;
+    grid-template-rows: 15em 15em;
     grid-template-areas: 
     "left-colum-top right-colum-mid"
     "left-colum-bot right-colum-mid";
-    gap: 10px;
+    gap: 80px;
     margin: auto;
-    padding: 0 35px;
-    border: var(--borderColor);
-    background: var(--secondaryColor);
-    
+    max-width: 1200px;
+   
+    align-items: center;
 }
 
-.left-colum-top {grid-area: left-colum-top; border-bottom: 1px solud grey;}
-.left-colum-bot {grid-area: left-colum-bot;}
-.right-colum-mid {grid-area: right-colum-mid;}
+.left-colum-top {
+     grid-area: left-colum-top;
+     border-bottom: 1px solid grey;
+     margin: auto;
+    }
+.left-colum-bot {
+    grid-area: left-colum-bot;
+    margin: auto;
+}
+.right-colum-mid {
+    grid-area: right-colum-mid;
+    margin: auto;
+}
+
+
+.img-container-s2 {
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.img-container-s2 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    object-fit: cover;
+    border: var(--borderColor-2px)
+}
+
+.right-colum-mid  h4 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.links a{
+    color: aquamarine;
+}
 
 .skills {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding: 5x;
+    padding: 5px;
     background-color: rosybrown;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.skills ul {
-    list-style: none;
-}
+
 
 /*---Section 2-- FINISH--------------------*/
 
