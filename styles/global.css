@@ -39,6 +39,14 @@ p,li,span,label,input,textarea {
     color: var(--mainText-color);
 }
 
+.title {
+    text-align: center;
+}
+
+.space-margin {
+    margin: 30px 0 0 0;
+}
+
 .quotes {
     font-size: 14px;
     font-family: var(--three-text-font);
@@ -73,12 +81,20 @@ h6 {font-size: 19px;}
     margin: auto;
 }
 
-/* start SECTION 1 title*/
 .s1 {
     background: var(--mainColor);
     border-bottom: var(--borderColor);
     overflow: auto; 
 }
+
+.s2 {
+    background-color: #fff!important;
+    width: 100%;
+}
+
+
+/* start SECTION 1 title*/
+
 
 .s1 h1 {
     width: 100%;
@@ -268,10 +284,7 @@ flex-direction: row;
 
 /*---Section 2-- START---------------------*/
 
-.s2 {
-    background-color: #fff!important;
-    width: 100%;
-}
+
 #about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -279,22 +292,26 @@ flex-direction: row;
     grid-template-areas: 
     "left-colum-top right-colum-mid"
     "left-colum-bot right-colum-mid";
-    gap: 80px;
-    margin: auto;
+    gap: 0 80px;
+    margin: 40px auto;
     max-width: 1200px;
-   
     align-items: center;
 }
 
 .left-colum-top {
      grid-area: left-colum-top;
-     border-bottom: 1px solid grey;
+     border-bottom: 1px solid black;
      margin: auto;
     }
 .left-colum-bot {
     grid-area: left-colum-bot;
     margin: auto;
 }
+
+.left-colum-bot h4 {
+   display: flex;
+}
+
 .right-colum-mid {
     grid-area: right-colum-mid;
     margin: auto;
@@ -313,7 +330,6 @@ flex-direction: row;
     width: 100%;
     min-width: 300px;
     object-fit: cover;
-    border: var(--borderColor-2px)
 }
 
 .right-colum-mid  h4 {
@@ -327,7 +343,13 @@ flex-direction: row;
     flex-direction: column;
 }
 .links a{
-    color: aquamarine;
+    color: #17a2b8;
+    font-weight: 400;
+    font-family: var(--secondary-text-font);
+}
+
+.links a:hover {
+    color: #17a3b8a1;
 }
 
 .skills {
@@ -335,14 +357,58 @@ flex-direction: row;
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 5px;
-    background-color: rosybrown;
+    background-color: rgba(188, 143, 143, 0.274);
     justify-content: space-evenly;
+}
+
+.skills ul li {
+    font-family: var(--three-text-font);
+    font-weight: 300;
 }
 
 
 /*---Section 2-- FINISH--------------------*/
 
+/*---Section 3-- START--------------------*/
 
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: auto;
+}
+
+.proyects {
+    text-align: center;
+    padding: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  /*---Section 3-- FINISH--------------------*/
 
         /*-------*MEDIA QUERYS-------------*/
 
@@ -375,3 +441,12 @@ flex-direction: row;
         margin: auto;
     }
 }
+
+
+
+
+
+
+
+
+
