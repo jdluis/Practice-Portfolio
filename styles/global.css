@@ -1,5 +1,6 @@
 /* <!--GOOGLE FONTS START-->*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,11 +9,13 @@
     -webkit-box-sizing: border-box;
     font-size: 18px;
     font-family: var(--primary-text-font);
+    color: var(--mainText-color);
 }
 
 
 :root {
-    --mainColor: #eaeaea;
+
+    --mainColor: #eaeaea; 
     --secondaryColor: #fff;
 
     --primary-text-font:'Russo One', sans-serif;
@@ -27,17 +30,46 @@
     
     --borderDotThema: 2px solid black;
     --borderDotThemaHover: 4px solid black;
+
     --mainText-color: #000;
     --secondaryText-color: #4b5156;
+
+    --links-Color: #17a2b8;
 }
 
+
+
+/*GENERAL STYLES FOR LABELS START...*/
 
 h1,h2,h3,h4,h5,h6, strong {
-    color: var(--mainText-color);
+    color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
+	font-weight: 500;
 }
-p,li,span,label,input,textarea {
-    color: var(--mainText-color);
+p, li, span, label, input, textarea {
+    color: var(--secondaryText-color);
+    font-family: 'Roboto Mono', monospace;
 }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #17a2b8;
+    font-weight: 400;
+    font-family: var(--secondary-text-font);
+}
+a:hover {
+    color: #17a3b8a1;
+}
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+/*....GENERAL STYLES FOR LABELS FINISH.*/
 
 .title {
     text-align: center;
@@ -59,22 +91,6 @@ p,li,span,label,input,textarea {
     margin: 16px 0;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--mainText-color);
-}
-
-h1 {font-size: 56px;}
-h2 {font-size: 42px;}
-h3 {font-size: 36px;}
-h4 {font-size: 25px;}
-h5 {font-size: 22px;}
-h6 {font-size: 19px;}
-
 .mainContainer {
     max-width: 1200px;
     height: 0 auto;
@@ -83,13 +99,13 @@ h6 {font-size: 19px;}
 
 .s1 {
     background: var(--mainColor);
-    border-bottom: var(--borderColor);
+    border-top: var(--borderColor-2px);
     overflow: auto; 
 }
 
 .s2 {
-    background-color: #fff!important;
-    width: 100%;
+    background-color: var(--secondaryColor);
+    border-top: var(--borderColor);
 }
 
 
@@ -293,7 +309,8 @@ flex-direction: row;
     "left-colum-top right-colum-mid"
     "left-colum-bot right-colum-mid";
     gap: 0 80px;
-    margin: 40px auto;
+    margin: auto;
+    padding: 40px 0;
     max-width: 1200px;
     align-items: center;
 }
@@ -342,15 +359,7 @@ flex-direction: row;
     align-items: center;
     flex-direction: column;
 }
-.links a{
-    color: #17a2b8;
-    font-weight: 400;
-    font-family: var(--secondary-text-font);
-}
 
-.links a:hover {
-    color: #17a3b8a1;
-}
 
 .skills {
     display: flex;
@@ -371,37 +380,30 @@ flex-direction: row;
 
 /*---Section 3-- START--------------------*/
 
-
+.s1 {
+    border-top: var(--borderColor);
+}
 
 .flex {
     display: flex;
     justify-content: space-evenly;
-    width: 1200px;
+   max-width: 1200px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .proyects {
     text-align: center;
     padding: 30px;
+    
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
-    text-align: center;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+    text-align: left;
+    padding-left: 8px;
   }
   
   .card button:hover {
@@ -409,6 +411,66 @@ flex-direction: row;
   }
 
   /*---Section 3-- FINISH--------------------*/
+
+
+  /*---Section 4 CONTACT-- START--------------------*/
+  .contact {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 10px auto;
+  }
+
+  .contact h3 {
+      padding: 30px 0;
+  }
+
+  .container-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 632px;
+    margin: auto;
+    border: var(--borderColor);
+  } 
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+
+  #submit-btn {
+      width: 100%;
+      background: black;
+      margin: auto;
+      border: var(--borderColor);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  #submit-btn:hover {
+   border: var(--borderColor-2px);
+    background: rgba(0, 0, 0, 0.781);
+    
+}
+
+
+  /*---Section 4 CONTACT-- FINISH--------------------*/
+
+
+
+
+
 
         /*-------*MEDIA QUERYS-------------*/
 

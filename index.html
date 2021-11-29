@@ -7,6 +7,7 @@
     <title>PJ.1 JDLuis</title>
 
     <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" id="switcher-id" href="">
   
 
 </head>
@@ -33,10 +34,10 @@
                 <img src="img/yoJD.jpg" alt="">
                 <h4>Personalize Theme</h4>
                 <div class="selec-pageColor">
-                    <button class="theme-dot white "></button>
-                    <button class="theme-dot black"></button>
-                    <button class="theme-dot grey"></button>
-                    <button class="theme-dot purple"></button>
+                    <button data-theme="white" id="switch-1" class="theme-dot switch white "></button>
+                    <button data-theme="dark" id="switch-2" class="theme-dot switch black"></button>
+                    <button data-theme="grey" id="switch-4" class="theme-dot switch grey"></button>
+                    <button data-theme="purple" id="switch-3" class="theme-dot switch purple"></button>
                  </div>
                  <p class="quotes">*Theme settings will be saved for
                     your next visit</p>
@@ -58,7 +59,7 @@
     </div>
 </section>
 
-<sec class="s2">
+<section class="s2">
     <div id="about-wrapper">
         <div class="left-colum-top">
             <h4>More About Me</h4>
@@ -97,7 +98,7 @@
             </div>
         </div>
     </div>
-</sec>
+</section>
 
 <section class="s1">
     <h3 class="title space-margin">Some of my Proyects</h3>
@@ -107,7 +108,7 @@
                 <img src="img/proyect1.png" alt="Denim Jeans" style="width:100%">
                 <h5>Tribute Page</h5>
                 <p class="secondary-text">Some text about the jeans..</p>
-                < <a href="https://codepen.io/jdluis/pen/wvepprX" target="_blank" >Add to Cart</a>
+                <a href="https://codepen.io/jdluis/pen/wvepprX" target="_blank">See More</a>
               </div> 
         </article>
 
@@ -116,7 +117,7 @@
                 <img src="img/proyect2.png" alt="Denim Jeans" style="width:100%">
                 <h5>Technical Documentation Page</h5>
                 <p class="secondary-text">Some text about the jeans..</p>
-                <a href="https://codepen.io/jdluis/pen/vYJBWjx" target="_blank" >Add to Cart</a>
+                <a href="https://codepen.io/jdluis/pen/vYJBWjx" target="_blank">See More</a>
               </div> 
         </article>
 
@@ -125,12 +126,37 @@
                 <img src="img/proyect3.png" alt="Denim Jeans" style="width:100%">
                 <h5>Product Landing Page</h5>
                 <p class="secondary-text">Some text about the jeans..</p>
-                <a href="https://codepen.io/jdluis/pen/wvepprX" target="_blank" >Add to Cart</a>
+                <a href="https://codepen.io/jdluis/pen/wvepprX" target="_blank">See More</a>
               </div> 
         </article>
     </div>
 </section>
 
+<section class="s2"> 
+    <div class="contact">
+        <h3 class="title" >Get in Touch</h3>
+        <div class="container-form">
+            <form id="contact-form">
+				<a id="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+          </div>     
+    </div>
+   
+</section>
 
 
     <script src="app/main.js"></script>

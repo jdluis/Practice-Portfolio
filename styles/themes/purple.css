@@ -1,0 +1,20 @@
+
+  :root {
+
+    --mainColor:   #46344e;
+    --secondaryColor: #382a3f;
+  
+    --previewBg: rgb(251, 249, 243, 0,8);
+    --previewShadow:#f0ead6;
+  
+    --borderColor:1px solid #050505;
+    --borderColor-2px:3px solid #000000;
+    
+    --borderDotThema: 2px solid black;
+    --borderDotThemaHover: 4px solid black;
+  
+    --mainText-color: #fff;
+    --secondaryText-color: #4b5156;
+  
+    --links-Color: #17a2b8;
+  }
