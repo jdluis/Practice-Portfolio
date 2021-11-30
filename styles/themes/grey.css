@@ -4,17 +4,19 @@
     --mainColor:   #606b56;
     --secondaryColor: #515a48;
   
-    --previewBg: rgb(251, 249, 243, 0,8);
-    --previewShadow:#f0ead6;
+    --previewBg: rgb(81, 90, 72, 0.8);
+    --previewShadow: #2a2f25;
   
-    --borderColor:1px solid #000000;
+    --borderColor:1px solid #161914;
     --borderColor-2px:3px solid #0c0c0c;
     
-    --borderDotThema: 2px solid black;
+    --borderDotThema: 2px solid #FFF;
     --borderDotThemaHover: 4px solid black;
   
     --mainText-color: #fff;
-    --secondaryText-color: #afb5b9;
+    --secondaryText-color: #eeeeee;
   
     --links-Color: #17a2b8;
+    --buttonColor: #669966;
   }
+

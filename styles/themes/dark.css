@@ -8,15 +8,17 @@
     --previewShadow:#111921;
   
     --borderColor:1px solid #164D56;
-    --borderColor-2px:3px solid #c1c1c1;
+    --borderColor-2px:3px solid #164D56;
     
-    --borderDotThema: 2px solid black;
+    --borderDotThema: 2px solid #FFF;
     --borderDotThemaHover: 4px solid black;
   
     --mainText-color: #fff;
-    --secondaryText-color: #4b5156;
+    --secondaryText-color: #eeeeee;
   
     --links-Color: #17a2b8;
     --buttonColor: #17a2b8;
 
   }
+
+
